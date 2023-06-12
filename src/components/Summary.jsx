@@ -23,7 +23,7 @@ export default function Summary(props) {
    })
    return (
       <div>
-         <h4 className='greyed'>Summary</h4>
+         <h3 className='greyed'>Summary</h3>
          <div className='cat-container'>{categoriesEl}</div>
       </div>
    )

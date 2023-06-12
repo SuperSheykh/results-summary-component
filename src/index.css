@@ -11,7 +11,7 @@ body {
 h1 {
    font-size: 3rem;
 }
-h4 {
+h3 {
    font-size: 1.2rem;
    padding-bottom: 0.5em;
 }
@@ -39,7 +39,7 @@ main {
    display: flex;
    flex-direction: column;
    align-items: center;
-   gap: 1.2em;
+   gap: 1em;
    padding: 1em 3em;
    border-bottom-left-radius: 2em;
    border-bottom-right-radius: 2em;
@@ -52,22 +52,6 @@ main {
       hsla(251, 71%, 49%, 1) 24%,
       hsla(241, 81%, 54%, 1) 100%
    );
-
-   background: -moz-linear-gradient(
-      180deg,
-      hsla(256, 72%, 46%, 1) 0%,
-      hsla(251, 71%, 49%, 1) 24%,
-      hsla(241, 81%, 54%, 1) 100%
-   );
-
-   background: -webkit-linear-gradient(
-      180deg,
-      hsla(256, 72%, 46%, 1) 0%,
-      hsla(251, 71%, 49%, 1) 24%,
-      hsla(241, 81%, 54%, 1) 100%
-   );
-
-   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4E21CA", endColorstr="#4424D4", GradientType=1 );
 }
 .circle {
    border-radius: 50%;
@@ -86,25 +70,6 @@ main {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-}
-
-.colors {
-   /* Primary  */
-   background-color: hsl(0, 100%, 67%);
-   background-color: hsl(39, 100%, 56%);
-   background-color: hsl(166, 100%, 37%);
-   background-color: hsl(234, 85%, 45%);
-
-   /* GRADIENTS */
-   background-color: hsl(252, 100%, 67%);
-   background-color: hsl(241, 81%, 54%);
-   background-color: hsl(256, 72%, 46%, 1);
-   background-color: hsla(241, 72%, 46%, 0);
-   /* neutral colors */
-   background-color: hsl(0, 0%, 100%);
-   background-color: hsl(221, 100%, 96%);
-   background-color: hsl(241, 100%, 89%);
-   background-color: hsl(224, 30%, 27%);
 }
 
 button {
@@ -156,11 +121,9 @@ span.score {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       padding: 1em;
-      /* M3/Elevation Light/3 */
 
       box-shadow: 0px 0px 00px 0px rgba(0, 0, 0, 0.15),
          0px 1px 1px rgba(0, 0, 0, 0.3);
-      border: none;
    }
    .header-section {
       justify-content: center;
