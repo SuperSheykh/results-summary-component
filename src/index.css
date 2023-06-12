@@ -1,0 +1,176 @@
+* {
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Hanken Grotesk', Inter, system-ui, Avenir, Helvetica, Arial,
+      sans-serif;
+}
+/* TY¨POGRAPHY */
+h1 {
+   font-size: 3rem;
+}
+h4 {
+   font-size: 1.2rem;
+   padding-bottom: 0.5em;
+}
+p {
+   font-size: 1rem;
+}
+.bold {
+   font-weight: 700;
+}
+main {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding-bottom: 2em;
+}
+.header-section .greyed {
+   color: rgb(196, 194, 194);
+}
+
+.header-section {
+   text-align: center;
+   color: white;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1.2em;
+   padding: 1em 3em;
+   border-bottom-left-radius: 2em;
+   border-bottom-right-radius: 2em;
+   /* Gradient background */
+   background: hsla(256, 72%, 46%, 1);
+
+   background: linear-gradient(
+      180deg,
+      hsla(256, 72%, 46%, 1) 0%,
+      hsla(251, 71%, 49%, 1) 24%,
+      hsla(241, 81%, 54%, 1) 100%
+   );
+
+   background: -moz-linear-gradient(
+      180deg,
+      hsla(256, 72%, 46%, 1) 0%,
+      hsla(251, 71%, 49%, 1) 24%,
+      hsla(241, 81%, 54%, 1) 100%
+   );
+
+   background: -webkit-linear-gradient(
+      180deg,
+      hsla(256, 72%, 46%, 1) 0%,
+      hsla(251, 71%, 49%, 1) 24%,
+      hsla(241, 81%, 54%, 1) 100%
+   );
+
+   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4E21CA", endColorstr="#4424D4", GradientType=1 );
+}
+.circle {
+   border-radius: 50%;
+   width: 8rem;
+   height: 8rem;
+   background-color: hsl(256, 72%, 46%, 1);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.summary-section {
+   color: black;
+   flex-grow: 1;
+   padding: 1em 1.5rem 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.colors {
+   /* Primary  */
+   background-color: hsl(0, 100%, 67%);
+   background-color: hsl(39, 100%, 56%);
+   background-color: hsl(166, 100%, 37%);
+   background-color: hsl(234, 85%, 45%);
+
+   /* GRADIENTS */
+   background-color: hsl(252, 100%, 67%);
+   background-color: hsl(241, 81%, 54%);
+   background-color: hsl(256, 72%, 46%, 1);
+   background-color: hsla(241, 72%, 46%, 0);
+   /* neutral colors */
+   background-color: hsl(0, 0%, 100%);
+   background-color: hsl(221, 100%, 96%);
+   background-color: hsl(241, 100%, 89%);
+   background-color: hsl(224, 30%, 27%);
+}
+
+button {
+   width: 100%;
+   border: none;
+   color: white;
+   font-size: 18px;
+   font-weight: bold;
+   background-color: hsl(224, 30%, 27%);
+   padding: 0.85em;
+   border-radius: 1.8em;
+   cursor: pointer;
+}
+button:hover {
+   background-color: hsl(224, 30%, 34%);
+}
+
+.category {
+   padding: 0.8em;
+   margin-bottom: 0.7em;
+   border-radius: 0.5em;
+   display: flex;
+   justify-content: space-between;
+}
+.cat-title {
+   display: flex;
+   gap: 1em;
+}
+.score {
+   color: rgb(67, 66, 66);
+   font-weight: 700;
+}
+span.score {
+   color: black;
+}
+
+@media (min-width: 400px) {
+   body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+   }
+   main {
+      background-color: white;
+      max-width: 1000px;
+      height: 80vh;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 1em;
+      /* M3/Elevation Light/3 */
+
+      box-shadow: 0px 0px 00px 0px rgba(0, 0, 0, 0.15),
+         0px 1px 1px rgba(0, 0, 0, 0.3);
+      border: none;
+   }
+   .header-section {
+      justify-content: center;
+      gap: 1em;
+      border-radius: 2em;
+   }
+   .summary-section {
+      justify-content: center;
+   }
+   button {
+      margin-top: 4em;
+   }
+}
